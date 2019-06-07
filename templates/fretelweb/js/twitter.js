@@ -12,7 +12,8 @@ jQuery(document).ready(function () {
       function (data) {
          data = data.replace(/&quot;/g, "\"")
             .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">");
+            .replace(/&gt;/g, ">")
+            .replace(/Síganos @/g, 'Síganos ');
 
          console.log(data);
          jQuery("#twitterFeedOutput").html(data);
